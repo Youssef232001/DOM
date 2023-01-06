@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Nike_tunisie </title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Nike_tunisie</span>
+        </div>
+      </nav>
+    </header>
+<!--Total price-->
+
+<div class="total">
+    <span style="font-size: 35px;">Total Price: </span>
+    <span  style="font-size: 35px;" id="totalPrice"> 0 </span>
+    <span style="font-size: 35px;">$</span>
+</div>
+
+
+    <!--Cards-->
+
+    <div class="cards">
+        <!--Card 1-->
+      <div class="card mb-3" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a3e7dead-1ad2-4c40-996d-93ebc9df0fca/dunk-low-retro-mens-shoes-8t3K7k.png"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <i class="fa-solid fa-circle-plus fa-xl"></i>
+              <span class="counter">0</span>
+              <i class="fa-solid fa-circle-minus fa-xl"></i>
+              <i class="fa-solid fa-trash fa-xl"></i>
+              <i class="fa-solid fa-heart fa-xl"></i>
+              <div class="ut-price">
+                <span class="unit-price">145</span><p>$</p>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+              <!--Card 2-->
+
+              <div class="card mb-3" style="max-width: 540px">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/521c06ef-4116-4281-bd89-9b1eec85523f/air-max-tw-shoes-DhpWvV.png" class="img-fluid rounded-start"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                      </p>
+                      <i class="fa-solid fa-circle-plus fa-xl"></i>
+                      <span class="counter"> 0 </span>
+                      <i class="fa-solid fa-circle-minus fa-xl"></i>
+                      <i class="fa-solid fa-trash fa-xl"></i>
+                      <i class="fa-solid fa-heart fa-xl"></i>
+                      <div class="ut-price">
+                        <span class="unit-price">250</span><p>$</p>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Card 3-->
+
+              <div class="card mb-3" style="max-width: 540px">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="data:image/jpeg;base64,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" class="img-fluid rounded-start"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                      </p>
+                      <i class="fa-solid fa-circle-plus fa-xl"></i>
+                      <span class="counter"> 0 </span>
+                      <i class="fa-solid fa-circle-minus fa-xl"></i>
+                      <i class="fa-solid fa-trash fa-xl"></i>
+                      <i class="fa-solid fa-heart fa-xl"></i>
+                      <div class="ut-price">
+                        <span class="unit-price">350</span><p>$</p>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+    </div>
+
+    <script src="./javascript.js"></script>
+  </body>
+</html>

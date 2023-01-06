@@ -1,0 +1,30 @@
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 600;
+    font-style: oblique;
+    border-radius: 15px 50px 30px ;
+}
+
+
+.cards {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 15px 50px 30px ;
+}
+.prix {
+    display: flex;
+}
+.button {
+    display: flex;
+    justify-content: space-around;
+}
+#total {
+    text-align: center;
+    margin-top: 85px;
+}
+i#youssef {
+    cursor: pointer;
+    color: blue;
+}
